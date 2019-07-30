@@ -7,17 +7,17 @@ class Account{
 }
 var accounts = [];
 // random account
-for(i = 0; i < 30; i++){
+for(i = 0; i < 20; i++){
 	if(i % 3 == 0){
-		accounts.push(new Account (generateRandomNumber(), generateRandomNumber(), i));
+		accounts.push(new Account (RandomNumber(), RandomNumber(), i));
 	}else if (i % 3 == 1){
-		accounts.push(new Account (null, generateRandomNumber(), i));
+		accounts.push(new Account (null, RandomNumber(), i));
 	}else{
 		accounts.push(new Account (null, null, i));
 	}
 }
-function generateRandomNumber(){
-	return Math.floor(Math.random() * 100);
+function RandomNumber(){
+	return Math.floor(Math.random() * 10) ;
 }
 
 // sort
